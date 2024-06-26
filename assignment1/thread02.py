@@ -2,7 +2,7 @@
 from time import sleep, ctime
 from threading import Thread
 
-# a custom function that blocks a for a moment
+# a custom function that blocks for a moment
 def task(sleep_time, message):
     # block for a moment
     sleep(sleep_time)
