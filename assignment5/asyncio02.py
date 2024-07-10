@@ -17,6 +17,8 @@ async def main():
     # wait for all taks to complete
     done, pending = await asyncio.wait(tasks, return_when=asyncio.FIRST_COMPLETED)
     print('All done')
+    first = done.pop()
+    print(first)
 
 # start the asyncio program
 asyncio.run(main())
