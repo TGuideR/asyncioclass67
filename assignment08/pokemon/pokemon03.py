@@ -31,6 +31,8 @@ async def index():
     pokemons = await get_pokemons()
     end_time = time.perf_counter()
     print(f"{time.ctime()} - Asynchronous get {len(pokemons)} pokemons. Time taken: {end_time-start_time} seconds")
+    for p in pokemons:
+        print(p.name)
 
 if __name__ == '__main__':
    asyncio.run(index())

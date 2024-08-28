@@ -8,4 +8,4 @@ async def custom_coro():
 # create the coroutine
 coro = custom_coro()
 # check the type of the coroutine
-print(type(coro))
+print(coro)
