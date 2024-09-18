@@ -107,7 +107,7 @@ async def main():
     
     for cashier in cashier_group:
         cashier = cashier.result()
-        print(f"The Cashier_{cashier['id']} take {cashier['customer']} total {cashier['time']:.2f} secs.")
+        print(f"The Cashier_{cashier['id']} take {cashier['customer']} total {cashier['time']} secs.")
 
 if __name__ == "__main__":
     asyncio.run(main())
